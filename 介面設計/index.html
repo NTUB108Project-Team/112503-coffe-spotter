@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>CoffeeSpotter</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+               <a class="navbar-brand"href="index.html"><img src="images/logo (2).png" width="200" height="200"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="coffees.html">Coffees</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+                  <div class="btn-group">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">台北市
+                         <span class="caret"></span>
+                     </button>
+                     <ul class="dropdown-menu scrollable-menu" role="menu">
+                         <li>
+                             <a href="zh.html">中正區</a>
+                         </li>
+                         <li>
+                             <a href="大安.html">大安區</a>
+                         </li>
+                         <li>
+                             <a href="中山.html">中山區</a>
+                         </li>
+                         <li>
+                           <a href="萬華.html">萬華區</a>
+                        </li>
+                        <li>
+                           <a href="大同.html">大同區</a>
+                        </li>
+                        <li>
+                           <a href="松山.html">松山區</a>
+                        </li>
+                        <li>
+                           <a href="信義.html">信義區</a>
+                        </li>
+                        <li>
+                           <a href="士林.html">士林區</a>
+                        </li>
+                        <li>
+                           <a href="北投.html">北投區</a>
+                        </li>
+                        <li>
+                           <a href="內湖.html">內湖區</a>
+                        </li>
+                        <li>
+                           <a href="南港.html">南港區</a>
+                        </li>
+                        <li>
+                           <a href="文山.html">文山區</a>
+                        </li>
+                     </ul>
+                 </div>
+                 <style>
+                  .scrollable-menu {
+                     max-height: 200px; /* 设置最大高度 */
+                     overflow-y: auto; /* 使用滚动条 */
+                  }
+
+                 </style>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="login_bt">
+                        <ul>
+                           <li><a href="login.html"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
+                           
+                        </ul>
+                     </div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+         <!-- banner section start --> 
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="banner_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="images/coffeeicon.png"></div>
+                           </div>
+                           <style>
+                              .banner_img img {
+                                 width: 300px; /* 设置图片宽度 */
+                                 height: auto; /* 根据宽度自动调整高度，保持比例 */
+                                 }
+                           </style>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">CoffeSpotter</h1>
+                                 <style>
+                                    .banner_taital {
+                                       font-size: 75px; /* 设置字体大小 */
+                                       /* 其他样式 */
+                                    }
+                                 </style>
+                                 <h5 class="tasty_text"></h5>
+                                 <p class="banner_text"></p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="images/coffeeicon.png"></div>
+                           </div>
+                           <style>
+                              .banner_img img {
+                                 width: 300px; /* 设置图片宽度 */
+                                 height: auto; /* 根据宽度自动调整高度，保持比例 */
+                                 }
+                           </style>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">CoffeSpotter</h1>
+                                 <style>
+                                    .banner_taital {
+                                       font-size: 75px; /* 设置字体大小 */
+                                       /* 其他样式 */
+                                    }
+                                 </style>
+                                 <h5 class="tasty_text"></h5>
+                                 <p class="banner_text"></p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="images/coffeeicon.png"></div>
+                           </div>
+                           <style>
+                              .banner_img img {
+                                 width: 300px; /* 设置图片宽度 */
+                                 height: auto; /* 根据宽度自动调整高度，保持比例 */
+                                 }
+                           </style>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">CoffeSpotter</h1>
+                                 <style>
+                                    .banner_taital {
+                                       font-size: 75px; /* 设置字体大小 */
+                                       /* 其他样式 */
+                                    }
+                                 </style>
+                                 <h5 class="tasty_text"></h5>
+                                 <p class="banner_text"></p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- coffee section start -->
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <h1 class="coffee_taital">Coffee store</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/ba.jpg" weight="20"height="20":></div>
+                              <h3 class="types_text">貝克宅</h3>
+                              <p class="looking_text">台北市中山區南京東路三段89巷5弄4號</p>
+                              <div class="read_bt"><a href="貝克宅.html">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/li.png"></div>
+                              <h3 class="types_text">哩家咖啡</h3>
+                              <p class="looking_text">台北市大同區重慶一路26巷49號</p><br>
+                              
+                              <div class="read_bt"><a href="哩家.html">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/ma.jpg"></div>
+                              <h3 class="types_text">咖啡梅</h3>
+                              <p class="looking_text">台北市中正區濟南路二段3號</p>
+                              <div class="read_bt"><a href="咖啡梅.html">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/hito.jpg"></div>
+                              <h3 class="types_text">Hito cafe</h3>
+                              <p class="looking_text">台北市中正區杭州南路一段15-1號</p>
+                              <div class="read_bt"><a href="hito.html">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/coffe-and-couple.jpg"></div>
+                              <h3 class="types_text">Coffee and Couple</h3>
+                              <p class="looking_text">台北市士林區文林路404巷10號</p>
+                              <div class="read_bt"><a href="Coffee and Couple.html">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/konzy-kava.jpg"></div>
+                              <h3 class="types_text">KONZY KAVA</h3>
+                              <p class="looking_text">台北市中山區長春路327巷5號</p>
+                              <div class="read_bt"><a href="konzy-kava.html">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-3.png"></div>
+                              <h3 class="types_text">COFFEE & PASTRY</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-4.png"></div>
+                              <h3 class="types_text">COFFEE TO GO</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-1.png"></div>
+                              <h3 class="types_text">TYPES OF COFFEE</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-2.png"></div>
+                              <h3 class="types_text">BEAN VARIETIES</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-3.png"></div>
+                              <h3 class="types_text">COFFEE & PASTRY</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-4.png"></div>
+                              <h3 class="types_text">COFFEE TO GO</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- coffee section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">有關我們的網站</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+            <div class="about_section_2 layout_padding">
+               <div class="image_iman"><img src="images/about-img.png" class="about_img"></div>
+               <div class="about_taital_box">
+                  <h1 class="about_taital_1">網站簡介</h1>
+                  <p class=" about_text">我們的網站是為了給想要專門尋找咖啡廳的客群，利用區域的篩選來選擇符合自己心儀的咖啡廳。</p>
+                  <div class="readmore_btn"><a href="about.html">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">創作者有話說</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+            <div class="client_section_2">
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img1.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">yo</h3>
+                     <p class="client_text">很開心能夠創作出一個能讓大家喜歡的網頁。</p>
+                  </div>
+               </div>
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img2.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">eva lu</h3>
+                     <p class="client_text">這個網頁是為了給想要尋找咖啡廳的客人使用的。</p>
+                  </div>
+               </div>
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img3.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">eteng</h3>
+                     <p class="client_text">希望大家能夠愉快的使用這個網頁。</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- client section end -->
+      <!-- blog section start -->
+      <div class="blog_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">本月推薦咖啡廳</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="images/ba2.jpg"></div>
+                        <h4 class="date_text">01 December</h4>
+                        <h4 class="prep_text">貝克宅</h4>
+                        <p class="lorem_text">一間小卻打造出溫馨感的咖啡廳，二樓還有軟骨頭沙發，是朋友聚餐、讀書的好去處。</p>
+                     </div>
+                     <div class="read_bt"><a href="貝克宅.html">Read More</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="images/li2.png"></div>
+                        <h4 class="date_text">01 December</h4>
+                        <h4 class="prep_text">哩家咖啡</h4>
+                        <p class="lorem_text">擁有著日式風格的咖啡廳設計不管是帶電腦辦公，還是讀書聊天，都是十分適合的地方。</p>
+                     </div>
+                     <div class="read_bt"><a href="哩家.html">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="contact_taital">回饋給我們</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="mail_section_1">
+                        <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
+                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
+                        <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                        <div class="send_bt"><a href="#">SEND</a></div>
+                     </div>
+                  </div>
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7696126874334!2d121.52304307372444!3d25.04189147781126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970a11a84ad%3A0x58e05f2528812097!2z5ZyL56uL6Ie65YyX5ZWG5qWt5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1700495653471!5m2!1szh-TW!2stw" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="address_text">台北市中正區濟南路一段321號</h1>
+                  <p class="footer_text">聯繫我們 </p>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">ntubimd@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
+                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12">
+                  <p class="copyright_text">CoffeSpotter</a></p>
+               </div>
+               <div class="col-lg-6 col-sm-12">
+                  <div class="footer_social_icon">
+                     <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
